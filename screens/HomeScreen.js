@@ -9,7 +9,8 @@ import {
 } from "react-native-heroicons/outline";
 
 import Categories from "../components/Categories";
-
+import FeaturedRow from '../components/FeaturedRow';
+import RestaurantCard from '../components/RestaurantCard';
 
 const HomeScreen = () => {
     const navigation = useNavigation();
@@ -63,6 +64,31 @@ const HomeScreen = () => {
             {/* Categories */}
              <Categories/>
             {/* {Featured Rows} */}
+
+            {/* {Featured} */}
+            <FeaturedRow 
+            id="123"
+            title="Featured"
+            description ="Paid placements from our partners"
+            featuredCategory="featured"
+            />
+
+            {/* {Tasty Discounts} */}
+            <FeaturedRow 
+            id="1234"
+            title="Tasty Discounts"
+            description ="Paid placements from our partners"
+            featuredCategory="featured"
+            />
+            
+            {/* {Offers near you} */}
+            <FeaturedRow 
+            id="12345"
+            title="Offers near you!"
+            description ="Paid placements from our partners"
+            featuredCategory="featured"
+            />
+
         </ScrollView>
 
 
