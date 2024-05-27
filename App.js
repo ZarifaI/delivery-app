@@ -13,6 +13,7 @@ export default function App() {
     <TailwindProvider>
     <Stack.Navigator>
     <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="Restaurant" component={RestaurantScreen} />
     </Stack.Navigator>
     </TailwindProvider>
     </NavigationContainer>
